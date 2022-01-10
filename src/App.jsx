@@ -1,14 +1,21 @@
 import { Router } from '@reach/router';
-import './App.module.scss';
-import { NavBar } from './Components/NavBar/NavBar';
-import { Home } from './Containers/Home/Home';
+import styles from './App.module.scss'
+
+import NavBar from "./Components/NavBar";
+
+import Routes from "./Containers/Routes"
 
 function App() {
   return (
+
     <>
-    < NavBar/>
-    < Home />
+   
+    < NavBar />
+
+    <section className={styles.content}><Routes /></section>
+
     </>
+
   );
   
 }
